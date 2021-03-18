@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "Vesper"
+version = "0.0.1"
+description = "Vesper bot"
+
+license = "MIT"
+
+authors = [
+    "The Moneypenny <exec_life@protonmail.com>"
+]
+
+readme = 'README.md'  # Markdown files are supported
+
+repository = "https://github.com/exec-life/Vesper"
+homepage = "https://github.com/exec-life/Vesper"
+
+keywords = ['packaging', 'poetry']
+
+[tool.poetry.dependencies]
+python = "^3.8"  # Compatible python versions must be declared here
+toml = "^0.9"
+# Dependencies with extras
+requests = { version = "^2.25" }
+pycryptodome = { version = "^3.10" }
+discord = { version = "^1.6" }
+scapy = { version = "^2.4" }
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+pytest-cov = "^2.4"
+
+[tool.poetry.scripts]
+my-script = 'my_package:main'
